@@ -16,6 +16,10 @@
 		D06E24E4286B798F00B95B58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D06E24E2286B798F00B95B58 /* LaunchScreen.storyboard */; };
 		D06E24ED286B80F500B95B58 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E24EC286B80F500B95B58 /* Reminder.swift */; };
 		D06E24EF286CCE6700B95B58 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D06E24EE286CCE6700B95B58 /* Podfile */; };
+		D097F09B286DEA33001A0D58 /* SnapKitTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D097F09A286DEA33001A0D58 /* SnapKitTestViewController.swift */; };
+		D097F09D286E08F6001A0D58 /* Date+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = D097F09C286E08F6001A0D58 /* Date+Today.swift */; };
+		D097F09F286E0912001A0D58 /* UIColor+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = D097F09E286E0912001A0D58 /* UIColor+Today.swift */; };
+		D097F0A1286E15D0001A0D58 /* EyeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D097F0A0286E15D0001A0D58 /* EyeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +33,11 @@
 		D06E24E3286B798F00B95B58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D06E24E5286B798F00B95B58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D06E24EC286B80F500B95B58 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
-		D06E24EE286CCE6700B95B58 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		D06E24EE286CCE6700B95B58 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D097F09A286DEA33001A0D58 /* SnapKitTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitTestViewController.swift; sourceTree = "<group>"; };
+		D097F09C286E08F6001A0D58 /* Date+Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Today.swift"; sourceTree = "<group>"; };
+		D097F09E286E0912001A0D58 /* UIColor+Today.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Today.swift"; sourceTree = "<group>"; };
+		D097F0A0286E15D0001A0D58 /* EyeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeViewController.swift; sourceTree = "<group>"; };
 		D52E29731114F5401D5E09DA /* Pods_Today.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Today.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF89CC6CD1F67A1CFFF753D /* Pods-Today.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Today.debug.xcconfig"; path = "Target Support Files/Pods-Today/Pods-Today.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,7 +68,6 @@
 				FEF89CC6CD1F67A1CFFF753D /* Pods-Today.debug.xcconfig */,
 				A4CD0C39EA349998F14517DD /* Pods-Today.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -90,6 +97,8 @@
 				D06E24D7286B798E00B95B58 /* AppDelegate.swift */,
 				D06E24D9286B798E00B95B58 /* SceneDelegate.swift */,
 				D06E24DB286B798E00B95B58 /* ReminderListViewController.swift */,
+				D097F0A0286E15D0001A0D58 /* EyeViewController.swift */,
+				D097F09A286DEA33001A0D58 /* SnapKitTestViewController.swift */,
 				D06E24DD286B798E00B95B58 /* Main.storyboard */,
 				D06E24E0286B798F00B95B58 /* Assets.xcassets */,
 				D06E24E2286B798F00B95B58 /* LaunchScreen.storyboard */,
@@ -101,7 +110,9 @@
 		D06E24EB286B80DD00B95B58 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D097F09E286E0912001A0D58 /* UIColor+Today.swift */,
 				D06E24EC286B80F500B95B58 /* Reminder.swift */,
+				D097F09C286E08F6001A0D58 /* Date+Today.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -222,8 +233,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D097F09F286E0912001A0D58 /* UIColor+Today.swift in Sources */,
+				D097F09B286DEA33001A0D58 /* SnapKitTestViewController.swift in Sources */,
 				D06E24DC286B798E00B95B58 /* ReminderListViewController.swift in Sources */,
 				D06E24D8286B798E00B95B58 /* AppDelegate.swift in Sources */,
+				D097F0A1286E15D0001A0D58 /* EyeViewController.swift in Sources */,
+				D097F09D286E08F6001A0D58 /* Date+Today.swift in Sources */,
 				D06E24DA286B798E00B95B58 /* SceneDelegate.swift in Sources */,
 				D06E24ED286B80F500B95B58 /* Reminder.swift in Sources */,
 			);
